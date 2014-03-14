@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+  <head>
+    <script type="text/javascript" src="../../main/javascript/Biojs.js"></script>
+    <script type="text/javascript" src="../../main/javascript/Biojs.TnTSimple.js"></script>
+    <script type="text/javascript" src="../../main/resources/dependencies/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../main/resources/dependencies/d3.v3.min.js"></script>
+    <script type="text/javascript" src="../../main/resources/dependencies/ePeek.js"></script>
+	  
+    <link href="../../main/resources/css/Biojs.Tree.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+      var TntSimple;
+      window.onload = function() { 
+         TntSimple = new Biojs.TntSimple({
+            <!-- "target" : "SimpleTree", -->
+            <!-- "newick" : "((human, chimp),mouse)", -->
+            <!-- "layout" : "vertical", -->
+            <!-- "width"  : 500, -->
+            <!-- "scale"  : false -->
+         });
+      };	       
+    </script>
+  </head>
+  <body>
+    <div id="SimpleTree"></div>
+    <div id="log"></div>
+  </body>
+</html>
