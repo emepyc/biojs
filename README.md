@@ -38,6 +38,29 @@ Before coding we suggest to collect [requirements](https://github.com/biojs/bioj
 
 If you already have some JavaScript functionality you could make it BioJS creating a wrapper on top of it. A wrapper is simply a new BioJS components using your JavaScript functionality as a dependency. We do not have a specific tutorial for this, but you could use the tutorials we have to create a component.
 
+
+# Installing BioJS locally
+If you want to test locally the components in the BioJS catalog or develop new ones you need to install the registry in your machine. To do this, follow these steps:
+
+## Pre-requisites:
+* [Maven 3](http://maven.apache.org/download.cgi)
+* [Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+* [npm](http://howtonode.org/introduction-to-npm)
+
+### Clone the BioJS repo:
+git clone https://github.com/biojs/biojs.git
+
+### Compile the library:
+mvn compile
+
+### Generate the registry:
+mvn jsdoctk:jsdoc
+
+### Start a local web server
+node server/server.js
+
+### Open a web browser at http://localhost:1337
+
 # Feedback
 Please feel free to send us feature requests and/or ideas of what it should be considered in the development of BioJS through the [issue tracker](https://github.com/biojs/biojs/issues) or the [BioJS mailing list](https://groups.google.com/forum/#!forum/biojs).
 

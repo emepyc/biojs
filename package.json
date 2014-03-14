@@ -1,0 +1,22 @@
+{
+  "name": "biojs",
+  "version": "0.0.0",
+  "description": "The aim of this project is to create a library of graphical components easy to reuse to represent biological information. A library easy to maintain and develop by identifying minimal functional units that could be used as building blocks for more complex applications. A browser independent JavaScript library easy to integrate in web applications regardless the programming language used to develop the server side.",
+  "main": "index.js",
+  "dependencies": {
+    "connect": "~2.14.2",
+    "express": "~3.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emepyc/biojs"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "gitHead": "19e08334ebbe68c8d33f1abfc7a6e4c0b6a6a764",
+  "readmeFilename": "README.md"
+}
