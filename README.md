@@ -57,7 +57,7 @@ mvn compile
 mvn jsdoctk:jsdoc
 
 ### Install nodejs dependencies:
-node install
+npm install
 
 ### Start a local web server
 node server/server.js
