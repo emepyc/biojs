@@ -15,9 +15,9 @@
  * @dependency <script language="JavaScript" type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
  * 
  * @requires epeek.js
- * @dependency <script language="JavaScript" type="text/javascript" src="../biojs/target/biojs/dependencies/ePeek/ePeek.js"</script> 
+ * @dependency <script language="JavaScript" type="text/javascript" src="../biojs/dependencies/ePeek.js"</script> 
  *
- * @param {Object} options An object with the options to display the component.
+ * @param {Object} options An object with the options to display the tree.
  *    
  * @option {string} target 
  *    Identifier of the DIV tag where the component should be displayed.
@@ -26,25 +26,15 @@
  *   Input data
  *     
  * @example 
- * var instance = new Biojs.TntSimple({
- *   "target": "SimpleTree",
- *   "inputData": {
- *     "title": {
- *       "text": "An example of a simple tree",
- *       "link": {
- *       "text": "Simple Tree",
- *       "url": "http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000142192;db=core"
- *      }
- *     }
- *   }
+ * var instance = new Biojs.TnTSimple({
+ *   "target": "YourOwnDivId",
  * });
  * 
  */
-Biojs.TntSimple = Biojs.extend (
-/** @lends Biojs.TntSimple# */
+Biojs.TnTSimple = Biojs.extend (
+/** @lends Biojs.TnTSimple# */
     {
 	constructor: function (options) {
-	    // Print HTML
 	    this._container = jQuery("#"+this.opt.target);
 	    this._container.append("<h1>" + this.opt.title + "</h1>");
 
@@ -75,10 +65,9 @@ Biojs.TntSimple = Biojs.extend (
 
   /**
    *  Default values for the options
-   *  @name Biojs.TntSimple-opt
+   *  @name Biojs.TnTSimple-opt
    */
 	opt: {
-	    // target: "SimpleTree",
 	    "title"  : "A simple tree",
 	    "target" : "SimpleTree",
             "newick" : "((human, chimp),mouse)",
@@ -90,8 +79,9 @@ Biojs.TntSimple = Biojs.extend (
   
   /**
    * Array containing the supported event names
-   * @name Biojs.TntSimple-eventTypes
+   * @name Biojs.TnTSimple-eventTypes
    */
-	eventTypes : [],
+	eventTypes : [
+	],
   
     });
