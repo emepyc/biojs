@@ -1,7 +1,10 @@
 var express = require("express");
 var http = require("http");
-var server = express();
+var httpProxy = require('http-proxy');
 
+var ebiProxy = httpProxy.createProxyServer(80,'');
+
+var server = express();
 server.configure(function () {
     server.use(express.static(__dirname + "/../target/"));
 });

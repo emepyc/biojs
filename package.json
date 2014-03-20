@@ -4,7 +4,8 @@
   "description": "The aim of this project is to create a library of graphical components easy to reuse to represent biological information. A library easy to maintain and develop by identifying minimal functional units that could be used as building blocks for more complex applications. A browser independent JavaScript library easy to integrate in web applications regardless the programming language used to develop the server side.",
   "main": "index.js",
   "dependencies": {
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "http-proxy": "~1.0.2"
   },
   "devDependencies": {},
   "scripts": {

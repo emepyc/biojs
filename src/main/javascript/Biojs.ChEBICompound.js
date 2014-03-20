@@ -102,7 +102,7 @@ Biojs.ChEBICompound = Biojs.extend(
 	   id: undefined,
 	   imageUrl: 'http://www.ebi.ac.uk/chebi/displayImage.do',
 	   chebiDetailsUrl: 'http://www.ebi.ac.uk/webservices/chebi/2.0/test/getCompleteEntity?chebiId=',
-	   proxyUrl: '../biojs/dependencies/proxy/proxy.php',
+	   // proxyUrl: '../biojs/dependencies/proxy/proxy.php',
 	   
 	   height: undefined,
 	   width: undefined,
@@ -234,16 +234,14 @@ Biojs.ChEBICompound = Biojs.extend(
 		
 		// Using proxy?
 	   	// Redirect using the proxy and encode all params as url data
-	   	if ( opt.proxyUrl != undefined ) {
+	   	// if ( opt.proxyUrl != undefined ) {
 	
-	   		 // Redirect to proxy url
-	   		 httpRequest.url = opt.proxyUrl;
+	   	// 	 // Redirect to proxy url
+	   	// 	 httpRequest.url = opt.proxyUrl;
 	
-	   		 // Encode both url and parameters under the param url
-	   		 httpRequest.data = [{ name: "url", value: urlSummary }];
-	
-
-	   	}
+	   	// 	 // Encode both url and parameters under the param url
+	   	// 	 httpRequest.data = [{ name: "url", value: urlSummary }];
+	   	// }
         // Data type
         httpRequest.dataType = "text";
 		jQuery.ajax(httpRequest);
